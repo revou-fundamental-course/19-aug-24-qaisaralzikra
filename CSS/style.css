@@ -4,6 +4,14 @@ body {
     margin: 0;
 }
 
+pre {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(3, 92, 11);
+}
+
 .logo > img {
     width: 80px;
     height: 80px;
@@ -29,10 +37,14 @@ nav > section {
 
 a {
     text-decoration: none;
-    color: black;
+    color: greenyellow;
     font-size: 20px;
-    border: 2px solid black;
     padding: 10px 15px 10px 15px;
+}
+
+a:hover {
+    background-color: greenyellow;
+    color: rgb(3, 92, 11);
 }
 
 .radius {
@@ -48,6 +60,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgb(3, 92, 11);
+    padding-top: 10px;
 }
 
 article {
@@ -63,6 +77,14 @@ center {
     margin-top: 50px;
     margin-right: 80px;
     margin-bottom: 50px;
+}
+
+.myProfil {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 190px;
+    gap: 8rem;
 }
 
 .sebelah-kiri {
@@ -104,6 +126,7 @@ center {
 
 .batas {
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 #message { 
@@ -131,6 +154,8 @@ footer {
     font-size: large;
     text-align: end;
     padding-right: 100px;
+    background-color: rgb(3, 92, 11);
+    color: greenyellow;
 }
 
 @media only screen and (max-width: 600px) {
