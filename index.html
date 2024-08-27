@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <nav class="line">
+            <header>
+                <div class="logo">
+                    <img src="image/img1.png" alt="">
+                </div>
+            </header>
+            
+            <section>
+                <table class="navigasi">
+                    <a href="#home" class="radius">Home</a>
+                    <a href="#our-profil">Our Profil</a>
+                    <a href="#">Achivemant</a>
+                    <a href="#message-us" class="radius-1">Message Us</a>
+                </table>
+            </section>
+        </nav>
+        
+        <main>
+            <div class="line">
+                <article class="judul">
+                    <header id="home">
+                        <h1>Welcome <span id="nama">user</span>, To our website</h1>
+                    </header>
+                    
+                    <p>Lorem Ipsum dolor sit amet</p>
+                    <center>
+                        <div>
+                            <img class="img-main" src="image/Screenshot 2024-05-25 232758.png" alt="">
+                            
+                            <img class="img-main" src="image/smk-kartika.webp" alt="">
+                            
+                            <img src="image/profil1.png" alt="" class="img-main">
+                        </div>
+                    </center>
+                </article>
+            </div>
+            
+            <div class="line">
+                <section class="batas">
+                    <header class="sebelah-kiri judul">
+                        <h1 id="our-profil">Our Profil</h1>
+                    </header>
+                    
+                    <div class="profil-item">
+                        <div class="profil">
+                            <div>
+                                <img src="image/rpl.jpeg" alt="" class="image-item">
+                                <h2 class="text-item">REKAYASA <br> PERANGKAT LUNAK</h2>
+                            </div>
+                        </div>
+                        <div class="profil">
+                            <div>
+                                <img src="image/permesinan.jpeg" alt="" class="image-item">
+                                <h2 class="text-item">TEKNIK MESIN</h2>
+                            </div>
+                        </div>
+                        <div class="profil">
+                            <div>
+                                <img src="image/kelistrikan.jpeg" alt="" class="image-item">
+                                <h2 class="text-item">TEKNIK <br> KETENAGALISTRIKAN</h2>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+    </div>
+    
+    <div class="line">
+        <header class="sebelah-kiri judul">
+            <h2 id="message-us">
+                Message Us
+            </h2>
+        </header>
+        <section class="batas" id="message">
+            <form class="formulir" name="message-form" onsubmit="return validateform()">
+                Nama          :<input placeholder="Nama" type="text" name="full-name" /><br />
+                
+                Tanggal Lahir :<input type="date" name="birth-date" /><br />
+                
+                Jenis Kelamin :
+                <input type="radio" id="male" name="gender" value="male"/>
+                <label1 for="male">Laki-laki</label1>
+                <input type="radio" id="female" name="gender" value="male"/>
+                <label1 for="male">Perempuan</label1>
+                
+                Pesan:
+                <textarea placeholder="Pesan" name="message"></textarea><br/>
+                
+                <input type="submit" value="Submit"/>
+            </form>
+            
+            <div class="form-item">
+                <p>Nama         : <span id="sender-full-name"></span></p>
+                <p>Tanggal Lahir: <span id="sender-birth-date"></span> </p>
+                <p>Jenis Kelamin: <span id="sender-gender"></span> </p>
+                <p>Pesan        : <span id="sender-message"></span> </p>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer>
+    &copy;Created By Qaisar Al Zikra
+</footer>
+</body>
+<script src="JS/script.js"></script>
+</html>
