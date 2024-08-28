@@ -1,31 +1,24 @@
 function replaceName() {
-    let nama = prompt("Isi nama anda", "");
+    let nama = prompt("Masukkan Nama Lengkap Anda", "");
     document.getElementById("nama").innerHTML = nama;
 }
 replaceName();
 
-function validateForm() {
-    const name = document.forms["message-form"]["full-name"].value;
-    const birthDate = document.forms["message-form"]["birth-date"].value;
-    const gender = document.forms["message-form"]["gender"].value;
-    const message = document.forms["message-form"]["message"].value;
+    function generateOutput() {
+            // Mengambil nilai dari form
+            const nama = document.getElementById('name').value;
+            const tanggalLahir = document.getElementById('tanggalLahir').value;
+            const jenisKelamin = document.querySelector('input[name="jenisKelamin"]:checked')?.value;
+            const pesan = document.getElementById('pesan').value;
 
-    if (name == "" || birthDate == "" || gender == "" || message == "") {
-    alert("Tidak boleh kosong");
-    return false;
+            // Menampilkan nilai di section output
+            document.getElementById('outputSection').innerHTML = `
+                <p>Nama : ${nama} <br></p>
+                <p>Tanggal Lahir: ${tanggalLahir} <br></p>
+                <p>Jenis Kelamin: ${jenisKelamin} <br></p>
+                <p>Pesan : ${pesan} <br></p>
+            `;
     }
-
-    setSenderUI(name, birthDate, gender, message);
-
-    return false;
-}
-
-function setSenderUI(name, birthDate, gender, message) {
-    document.getElementById("sender-full-name").innerHTML = name;
-    document.getElementById("sender-birth-date").innerHTML = birthDate;
-    document.getElementById("sender-gender").innerHTML = gender;
-    document.getElementById("sender-message").innerHTML = message;
-}
 
 var slideIndex = 1;
 showDivs(slideIndex)

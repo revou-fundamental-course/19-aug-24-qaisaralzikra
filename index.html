@@ -7,14 +7,14 @@
         <link rel="stylesheet" href="CSS/style.css">
     </head>
     <body>
-        <nav class="line">
+        <nav>
             <header>
                 <div class="logo">
                     <img src="image/img1.png" alt="">
                 </div>
             </header>
             
-            <section>
+            <section class="navSec">
                 <table class="navigasi">
                     <a href="#home" class="radius">Beranda</a>
                     <a href="#myProfil">My Profil</a>
@@ -23,12 +23,11 @@
                 </table>
             </section>
         </nav>
-        
         <main>
 
 
             <!-- Beranda -->
-            <div class="line">
+            <div>
                 <article class="judul">
                     <header id="home">
                         <h1>Welcome <span id="nama">user</span>, To our website</h1>
@@ -51,11 +50,11 @@
 
 
             <!-- My Profil -->
-            <div class="line">
+            <div class="line" style="border-top: 2px solid black;">
                 <section class="batas">
                     <h1 style="margin-left: 100px;" id="myProfil">Profil Saya</h1>
                     <div class="myProfil">
-                        <div>
+                        <div class="img-myProfil">
                             <img src="image/profil1.png" alt="" style="height: 450px; border-radius: 30px; margin-top: 30px;">
                         </div>
 
@@ -69,13 +68,13 @@
         <b>MOTTO        :</b> <em>"Kesuksesan tidak akan bertahan lama, jika Anda 
                                 memperolehnya lewat jalan pintas."</em><br>
         <b>QUOTE        :</b> <em>"mulai sekarang perbaiki hidupmu, tegakkan bahumu
-                                dan lurus kan niat mu, belajar lah mengemudi dan lakukanlah
-                                sendiri, upgrade menjadi versi terbaik mu, jangan dengar kan
-                                pujian, karna itu mematikan, belajar pahami seseorang yang
-                                datang dan pergi, abaikan banyak nya drama dunia dan fokus
-                                kepada dirimu dan keluargamu,katakan pada dirimu "aku harus
-                                berubah menjadi pribadi yang lebih baik", abaikan drama percintaan
-                                dan jangan ikut kebelakang."</em>
+                                dan lurus kan niat mu, belajar lah mengemudi dan
+                                lakukanlah sendiri, upgrade menjadi versi terbaik mu, jangan dengar
+                                kan pujian, karna itu mematikan, belajar pahami seseorang yang
+                                fokus datang dan pergi, abaikan banyak nya drama dunia dan 
+                                kepada dirimu dan keluargamu,katakan pada dirimu 
+                                "aku harus berubah menjadi pribadi yang lebih baik", abaikan drama 
+                                percintaan dan jangan ikut kebelakang."</em>
                             </pre>
                         </div>
                     </div>
@@ -126,29 +125,32 @@
             </h1>
         </header>
         <section class="batas" id="message">
-            <form class="formulir" name="message-form" onsubmit="return validateform()">
-                Nama          :<input placeholder="Nama" type="text" name="full-name" /><br />
+            <form id="myForm" class="formulir">
+                <label for="nama">Nama :</label>
+                <input type="text" id="name" name="nama"><br><br>
                 
-                Tanggal Lahir :<input type="date" name="birth-date" /><br />
-                
-                Jenis Kelamin :
-                <input type="radio" id="male" name="gender" value="male"/>
-                <label1 for="male">Laki-laki</label1>
-                <input type="radio" id="female" name="gender" value="male"/>
-                <label1 for="male">Perempuan</label1>
-                
-                Pesan:
-                <textarea placeholder="Pesan" name="message"></textarea><br/>
-                
-                <input type="submit" value="Submit"/>
+                <label for="tanggalLahir">Tanggal Lahir :</label>
+                <input type="date" id="tanggalLahir" name="tanggalLahir"><br><br>
+
+                <label>Jenis Kelamin :</label><br>
+                <input type="radio" id="lakiLaki" name="jenisKelamin" value="Laki-laki">
+                <label for="lakiLaki">Laki-laki</label><br>
+                <input type="radio" id="perempuan" name="jenisKelamin" value="Perempuan">
+                <label for="perempuan">Perempuan</label><br><br>
+
+                <label for="pesan">Pesan:</label><br>
+                <textarea id="pesan" name="pesan"></textarea><br><br>
+
+                <button type="button" onclick="generateOutput()">Submit</button>
             </form>
-            
-            <div class="form-item">
-                <p>Nama         : <span id="sender-full-name"></span></p>
-                <p>Tanggal Lahir: <span id="sender-birth-date"></span> </p>
-                <p>Jenis Kelamin: <span id="sender-gender"></span> </p>
-                <p>Pesan        : <span id="sender-message"></span> </p>
-            </div>
+
+        <div class="output" id="outputSection" style="margin-top: 30px;">
+            <p>Nama :</p>
+            <p>Tanggal Lahir:</p>
+            <p>Jenis Kelamin:</p>
+            <p>Pesan :</p>
+        </div>
+
         </section>
     </div>
 </main>
