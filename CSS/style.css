@@ -74,6 +74,10 @@ article {
     padding-right: 50px;
 }
 
+.article {
+    margin-right: 800px;
+}
+
 article > div {
     display: flex;
 }
@@ -93,6 +97,45 @@ center {
     margin: 50px 0px 0px 100px;
 }
 
+
+/* visi misi */
+.visi-misi {
+    margin: 50px 200px 50px 200px;
+}
+
+table,th,td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td {
+    padding: 10px 10px 10px 10px;
+}
+
+.judul-visi {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: rgb(3, 92, 11);
+}
+
+.judul-visi > h1 {
+    color: greenyellow;
+}
+
+th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.judul-visi > img {
+    width: 150px;
+}
+
+#visi-misi1 {
+    margin-top: 50px;
+    margin-left: 120px;
+    font-size: 25px;
+}
 
 /* profil saya */
 
@@ -198,11 +241,12 @@ footer {
 
 
 @media only screen and (max-width: 600px) {
+    /* navigasi */
     nav {
         display: flex;
         flex-direction: column;
     }
-
+    
     nav > section {
         display: flex;
         flex-direction: column;
@@ -213,11 +257,132 @@ footer {
         margin-bottom: 20px;
         text-align: left;
     }
+    
+    .logo {
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+    
+    
+    nav > header {
+        align-items: start;
+        text-align: -webkit-center;
+        align-self: flex-start;
+    }
+    
+    .navigasi {
+        border: 0;
+    }
+    
+    .radius {
+        border-radius: 0;
+    }
+    
+    .radius-1 {
+        border-radius: 0;
+    }
+    
+    a {
+        padding: 10px 100px 10px 40px;
+    }
+    
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    /* visi misi */
+    .visi-misi {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    /* profil saya */
+    .myProfil {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin: 0px;
+    }
+    .img-main > img {
+        height: 2px;
+        width: 0px;
+        border-radius: 30px;
+    }
+    .article {
+        margin-right: 0;
+    }
+    .quote {
+        display: none;
+    }
+    
+    article {
+        padding-left: 0px;
+    }
+    
+    /* jurusan */
+    .profil-item {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin-left: 4px;
+        gap: 1rem;
+    }
+    
+    .profil {
+        margin-bottom: 50px;
+    }
+    
+    .judul {
+        margin: 4rem;
+    }
+    
+    
+    /* message */
+    #message {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    
+    .output {
+        align-self: center;
+        width: 363px;
+    }
+    
+
+    pre {
+        
+    }
+
+
+}
+
+@media only screen and (min-width: 600px) {
+    /* navigasi */
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav > section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-left: 300px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
 
     .logo {
         padding: 0px;
         margin: 0px;
         margin-bottom: 20px;
+        margin-top: 30%;
     }
 
 
@@ -231,39 +396,28 @@ footer {
         border: 0;
     }
 
-    .radius {
-        border-radius: 0;
+    /* beranda */
+
+    article {
+        padding-left: 6%;
     }
 
-    .radius-1 {
-        border-radius: 0;
+        .article {
+        margin-right: 0;
+    }
+    .img-main {
+        height: 240px;
+        width: 450px;
+        border-radius: 30px;
     }
 
-    a {
-        padding: 10px 100px 10px 40px;
+    /* visi misi */
+    .visi-misi {
+        margin-left: 50px;
+        margin-right: 50px;
     }
 
-    img {
-        width: auto;
-    }
-
-    body {
-        padding: 0;
-        margin: 0;
-    }
-
-    .profil-item {
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        margin-left: 4px;
-        gap: 1rem;
-    }
-
-    .profil {
-        margin-bottom: 50px;
-    }
-
+    /* profil saya */
     .myProfil {
         display: flex;
         flex-direction: column;
@@ -271,33 +425,440 @@ footer {
         margin: 0px;
     }
 
-    article {
-        padding-left: 0px;
+    .quote {
+        display: none;
     }
 
+    /* jurusan */
+    .profil-item {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin-left: 4px;
+        gap: 1rem;
+    }
+    
+    .profil {
+        margin-bottom: 50px;
+    }
+    
     .judul {
         margin: 4rem;
     }
 
+    /* message */
     #message {
         display: flex;
         flex-direction: column;
         margin-left: 60px;
         margin-right: 60px;
     }
-
+    
     .output {
         align-self: center;
-        width: 363px;
+        width: 550px;
+    }
+}
+
+@media only screen and (min-width: 630px) {
+    nav {
+        display: flex;
+        flex-direction: row;
     }
 
+    nav > section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-left: 350px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .logo {
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 20px;
+        margin-top: 30%;
+    }
+
+
+    nav > header {
+        align-items: start;
+        text-align: -webkit-center;
+        align-self: flex-start;
+    }
+
+    /* visi misi */
+    .visi-misi {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media only screen and (min-width: 670px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav > section {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        margin-left: 230px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .logo {
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 20px;
+        margin-top: 30%;
+    }
+
+
+    nav > header {
+        align-items: start;
+        text-align: -webkit-center;
+        align-self: flex-start;
+    }
+
+    /* visi misi */
+    .visi-misi {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    /* navigasi */
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav > section {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-left: 64px;
+        text-align: center;
+        margin-bottom: 10px;
+        text-align: left;
+    }
+
+    .logo {
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 20px;
+        margin-top: 30%;
+    }
+
+
+    nav > header {
+        align-items: start;
+        text-align: -webkit-center;
+        align-self: flex-start;
+    }
+
+    /* beranda */
+    article {
+        padding-left: 6%;
+    }
+
+        .article {
+        margin-right: 0;
+    }
     .img-main {
-        height: 200px;
-        width: 380px;
+        height: 300px;
+        width: 540px;
         border-radius: 30px;
     }
 
-    pre {
-        margin-left: 10%;
+    /* visi misi */
+    .visi-misi {
+        margin-left: 50px;
+        margin-right: 50px;
     }
+
+    /* profil saya */
+    .myProfil {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin: 0px;
+    }
+
+    .quote {
+        display: math;
+    }
+
+    /* message */
+    #message {
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+    .output {
+        align-self: center;
+        width: 550px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    /* navigasi */
+    nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav > section {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-left: 264px;
+        text-align: left;
+        padding: 0;
+    }
+
+    .logo {
+        padding: 0px;
+        margin: 0px;
+        margin-bottom: 20px;
+        margin-top: 30%;
+    }
+
+
+    nav > header {
+        align-items: start;
+        text-align: -webkit-center;
+        align-self: flex-start;
+    }
+
+    /* beranda */
+    article {
+        padding-left: 6%;
+    }
+
+        .article {
+        margin-right: 0;
+    }
+    .img-main {
+        height: 400px;
+        width: 740px;
+        border-radius: 30px;
+    }
+
+    /* profil saya */
+    .myProfil {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin: 0px;
+    }
+    .img-myProfil > img {
+        width: 450px;
+    }
+
+    /* message */
+    #message {
+        display: flex;
+        flex-direction: column;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    
+    .output {
+        align-self: center;
+        width: 600px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* navigasi */
+
+.logo > img {
+    width: 80px;
+    height: 80px;
+    padding-left: 50px;
+}
+
+.logo {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+nav > section {
+    margin-right: 80px;
+    margin-left: 870px;
+}
+
+a {
+    text-decoration: none;
+    color: greenyellow;
+    font-size: 20px;
+    padding: 10px 15px 10px 15px;
+}
+
+a:hover {
+    background-color: greenyellow;
+    color: rgb(3, 92, 11);
+}
+
+.radius {
+    border-radius: 5px 0px 0px 5px;
+}
+
+.radius-1 {
+    border-radius: 0px 5px 5px 0px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(3, 92, 11);
+    padding-top: 10px;
+}
+
+/* Beranda */
+
+
+article {
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+.article {
+    margin-right: 680px;
+}
+
+article > div {
+    display: flex;
+}
+
+center {
+    margin-top: 50px;
+    margin-right: 80px;
+    margin-bottom: 50px;
+}
+
+.img-main {
+    height: 450px;
+    width: 1000px;
+    border-radius: 30px;
+}
+
+.judul {
+    margin: 50px 0px 0px 100px;
+}
+
+/* visi misi */
+    .visi-misi {
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+
+
+/* profil saya */
+
+.myProfil {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 190px;
+    gap: 5rem;
+}
+
+pre {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sebelah-kiri {
+    padding-left: 20px;
+}
+
+
+.garis {
+    border: 1px solid black;
+}
+
+
+/* jurusan */
+
+
+.image-item {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.profil-item {
+    display: flex;
+    margin: 50px 0px 0px 100px;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.text-item {
+    text-align: center;
+}
+
+.profil {
+    text-align: -webkit-center;
+}
+
+
+/* message */
+
+
+.batas {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#message { 
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.formulir {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.form-item {
+    margin-top: 50px;
+    border: 1px black solid;
+    border-radius: 10px;
+    background-color: rgb(225, 225, 225);
+    border-color: rgb(225, 225, 225);
+}
+
+.output {
+    background-color: green;
+    border-radius: 20px;
+    padding-top: 5px;
+    padding-left: 20px;
+    width: 50%;
+    color: greenyellow;
+    height: 300px;
+}
 }

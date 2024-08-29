@@ -8,7 +8,7 @@ replaceName();
             // Mengambil nilai dari form
             const nama = document.getElementById('name').value;
             const tanggalLahir = document.getElementById('tanggalLahir').value;
-            const jenisKelamin = document.querySelector('input[name="jenisKelamin"]:checked')?.value;
+            const jenisKelamin = document.querySelector('input[name="jenisKelamin"]:checked').value;
             const pesan = document.getElementById('pesan').value;
 
             // Menampilkan nilai di section output
@@ -18,6 +18,7 @@ replaceName();
                 <p>Jenis Kelamin: ${jenisKelamin} <br></p>
                 <p>Pesan : ${pesan} <br></p>
             `;
+            
     }
 
 var slideIndex = 1;
